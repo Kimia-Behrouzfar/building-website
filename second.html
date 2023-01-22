@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="second.css" />
+    <title>SHOPPING</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv3jeM0nIRb5BqwviquZ1K7QwaA-Zav2Ph_OjJt3tXN-uoepnLzGM5MTSuZuDo7QA7d20&usqp=CAU"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <ul class="nav">
+        <li><a href="second.html" class="active">Home</a></li>
+        <li><a href="third.html">Services</a></li>
+        <li><a href="fourth.html">Contact Us</a></li>
+        <li><a href="fifth.html">About Us</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="imgs">
+      <h1 class="text-header">SHOOPING</h1>
+      <!-- owl-carousel owl-theme -->
+      <div class="owl-carousel">
+        <div class="item">
+          <img src="img.second/img1.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/img2.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/img3.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/img4.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/img5.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/img6.jpg" />
+        </div>
+      </div>
+      <div class="owl-carousel">
+        <div class="item">
+          <img src="img.second/1.png" />
+        </div>
+        <div class="item">
+          <img src="img.second/2.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/3.png" />
+        </div>
+        <div class="item">
+          <img src="img.second/4.jpg" />
+        </div>
+        <div class="item">
+          <img src="img.second/5.jpg" />
+        </div>
+      </div>
+      <div class="owl-carousel">
+        <div class="item">
+          <img src="img.second/1a.png" />
+        </div>
+        <div class="item">
+          <img src="img.second/2a.png" />
+        </div>
+        <div class="item">
+          <img src="img.second/3a.png" />
+        </div>
+        <div class="item">
+          <img src="img.second/4a.png" />
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+* {
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px, 12%;
+  transition: all 0.5s ease;
+  background-color: white;
+}
+.nav {
+  display: flex;
+}
+a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: rgba(224, 156, 29, 0.836);
+}
+a.active {
+  color: rgba(224, 156, 29, 0.836);
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: blue;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: -100;
+    width: 270px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    color: rgba(224, 156, 29, 0.836);
+    transform: translateY(5px);
+  }
+  a.active {
+    color: rgba(224, 156, 29, 0.836);
+  }
+}
+
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  margin-top: 100px;
+  max-width: 400px;
+  width: 100%;
+}
+.box .search-box {
+  position: relative;
+  height: 50px;
+  max-width: 380px;
+  background: black;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0 0.25);
+}
+
+.search-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.search-box .icon {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 50px;
+  background: black;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  color: orange;
+  font-size: 20px;
+  height: 100%;
+}
+
+.data {
+  margin: 150px;
+  padding: 50px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.select {
+  margin: 10px;
+  padding: 20px;
+  color: #000;
+  border: #000 1px solid;
+}
+
+.h {
+  color: #000;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+.price,
+.des {
+  display: contents;
+  color: #000;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+.image {
+  margin: 20px;
+  padding: 2rem;
+  width: 140px;
+  height: 110px;
+  border: 1px solid;
+  justify-content: center;
+}
+
+@media (max-width: 1500px) {
+  .box {
+    margin-left: 300px;
+  }
+}

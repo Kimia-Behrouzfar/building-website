@@ -1,0 +1,131 @@
+* {
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px, 12%;
+  transition: all 0.5s ease;
+  background-color: white;
+}
+.nav {
+  display: flex;
+}
+a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: rgba(179, 119, 8, 0.836);
+}
+a.active {
+  color: rgba(179, 119, 8, 0.836);
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: blue;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: -100;
+    width: 270px;
+    height: 100px;
+    /* background; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    color: rgba(179, 119, 8, 0.836);
+    transform: translateY(5px);
+  }
+  a.active {
+    color: rgba(179, 119, 8, 0.836);
+  }
+}
+
+body {
+  background-image: url("https://img.freepik.com/premium-photo/attractive-woman-with-shop-bags-yellow-background_185193-69051.jpg?w=2000");
+}
+
+h1 {
+  margin-top: 15rem;
+  margin-left: 15rem;
+  color: black;
+}
+p {
+  font-family: sans-serif;
+  padding-top: 1rem;
+  margin-left: 15rem;
+  color: black;
+}
+
+.button {
+  margin-top: 35px;
+  margin-left: 15rem;
+}
+
+.btn-talk,
+.btn-support {
+  padding: 10px;
+  margin-left: 40px;
+  font-weight: 100;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgba(224, 156, 29, 0.836);
+}
+
+h2 {
+  margin-top: 100px;
+  margin-left: 15rem;
+}
+.social {
+  font-family: sans-serif;
+  display: flexbox;
+  margin-left: 15rem;
+  gap: 30px;
+}
+li:hover {
+  color: rgba(179, 119, 8, 0.836);
+}
